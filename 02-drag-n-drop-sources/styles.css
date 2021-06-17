@@ -16,9 +16,14 @@ body {
 
 .row {
   display: flex;
-  width: 600px;
+  width: 100vw;
+  min-width: 470px;
+  max-width: 600px;
   justify-content: space-between;
   margin-bottom: 1rem;
+  flex-wrap: nowrap;
+  gap: 7px;
+  padding: 0 0.7rem;
 }
 
 .col-header {
@@ -49,7 +54,15 @@ body {
 .placeholder {
   width: 150px;
   height: 66px;
-}
+  border-radius: 20px;
+  background: repeating-linear-gradient(
+  45deg,
+  transparent, 
+    transparent 5px,
+    #ddd 5px,
+    #ddd 10px
+  );
+}  
 
 .start {
   background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
@@ -64,7 +77,12 @@ body {
 }
 
 .hold {
-  border: 5px solid #eee;
+  border: 2px solid #fff;
+  width: 102%; 
+  opacity: 0.11;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.336);
+  color: #8d8d8da4;
 }
 
 .hide {
@@ -72,5 +90,13 @@ body {
 }
 
 .hovered {
-  border-top: 2px solid #8ed7ed;
+  /* border-top: 2px solid #8ed7ed; */
+  border-radius: 20px;
+  background: repeating-linear-gradient(
+  45deg,
+  transparent,
+    transparent 5px,
+    #eee 5px,
+    #eee 10px
+  );
 }
