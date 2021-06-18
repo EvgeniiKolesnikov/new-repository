@@ -6,8 +6,8 @@ const cellSize = 16
 const windowInnerWidth = document.documentElement.clientWidth
 const windowInnerHeight = document.documentElement.clientHeight
 const SQUARES_NUMBER = 
-  Math.floor((windowInnerWidth) / (cellSize + cellSpace)) *
-  Math.floor((windowInnerHeight) / (cellSize + cellSpace))
+  Math.floor((windowInnerWidth * .98) / (cellSize + cellSpace)) *
+  Math.floor((windowInnerHeight * .98) / (cellSize + cellSpace))
 
 let squareFill = 0;
 let gameOver = false;
@@ -69,3 +69,5 @@ function getColor(mouseY) {
 function getNumberBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
+
+window.onresize = () => location.reload()
