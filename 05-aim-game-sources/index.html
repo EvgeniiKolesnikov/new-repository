@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>Aim Training | Проект 5</title>
     <script src="./app.js" defer></script>
   </head>
@@ -31,12 +32,33 @@
             30 сек
           </button>
         </li>
+        <li>
+          <button class="time-btn" data-time="40">
+            40 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="50">
+            50 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="60">
+            60 сек
+          </button>
+        </li>
       </ul>
     </div>
 
     <div class="screen">
       <h3>Осталось <span id="time">00:00</span></h3>
       <div class="board" id="board"></div>
+      <a href="#" class="restart" id="restart">Рестарт</a>
     </div>
+    <audio src="https://notification-sounds.com/soundsfiles/Ticking-clock-sound.mp3" hidden id="tickerSound"></audio>
+    <audio src="https://notification-sounds.com/soundsfiles/Snap-sound-effect.mp3" hidden id="lootSound"></audio>
+    <audio src="https://notification-sounds.com/soundsfiles/Roblox-death-sound.mp3" hidden id="menuBtnSound"></audio>
+    <audio src="https://d4.hotplayer.ru/download/9fe2792249a1fc723108d6160b5fd57e/9321475_265826625/635d3df825db-993aec9997b-a976f809260/9999-in-1%20-%20Menu%20%28NES%29.mp3" hidden id="gameMusicSound"></audio>
+    <audio src="https://d7.hotplayer.ru/download/863bc67d4d56ee05a65601ea6c04f4ba/2000080932_255814831/1075c8f42ac0a-12a8b5508fd4-46f3fdb4523/Battle%20City%20%28NES%29%20-%20Amazing%20Score.mp3" hidden id="gameOverSound"></audio>
   </body>
 </html>

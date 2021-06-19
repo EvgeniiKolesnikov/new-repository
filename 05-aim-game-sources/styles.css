@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,7 +7,7 @@
 
 body {
   color: #fff;
-  font-family: 'Khula', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -24,6 +25,11 @@ a:hover {
 
 .start {
   font-size: 1.5rem;
+}
+
+.restart {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 h1 {
@@ -52,6 +58,7 @@ h1 {
   justify-content: center;
   list-style: none;
   padding: 0;
+  max-width: 400px;
 }
 
 .time-list li {
@@ -66,6 +73,8 @@ h1 {
   font-family: inherit;
   padding: .5rem 1rem;
   font-size: 1.5rem;
+  min-width: 110px;
+  box-shadow: 0 0 10px;
 }
 
 .time-btn:hover {
