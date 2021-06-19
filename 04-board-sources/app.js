@@ -24,20 +24,22 @@ function createBoard() {
     const square = document.createElement('div')
     square.classList.add('square')
     board.append(square)
-    square.addEventListener('mouseover', (e) => setColor(e, square))
-    square.addEventListener('mouseleave', (e) => fillColor(e, square))
+    square.addEventListener('mouseover', setColor)
+    square.addEventListener('mouseleave', fillColor)
   }
 }
 createBoard()
 
-function setColor(e, element) {
+function setColor(e) {
+  let element = e.target
   counter(element)
   const color = getColor(e.clientY)
   element.style.border = `6px double ${color}`
   element.style.boxShadow = `0 0 20px ${color}, 0 0 10px ${color}`
 }
 
-function fillColor(e, element) {
+function fillColor(e) {
+  let element = e.target
   element.style.backgroundColor = element.style.borderColor
   // element.style.backgroundColor = '#0d0d0d'
   // element.style.boxShadow = `0 0 2px #000`
